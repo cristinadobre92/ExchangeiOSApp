@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6585A50D2E2ECFE3000BD35A /* UILibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 6585A50C2E2ECFE3000BD35A /* UILibrary */; };
+		6585A5702E2FD4EF000BD35A /* NetworkLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 6585A56F2E2FD4EF000BD35A /* NetworkLibrary */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6585A4332E2EC376000BD35A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,22 +32,14 @@
 		6585A4222E2EC375000BD35A /* ExchangeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6585A4322E2EC376000BD35A /* ExchangeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6585A43C2E2EC376000BD35A /* ExchangeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6585A4E32E2ECE1C000BD35A /* UILibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = UILibrary; sourceTree = "<group>"; };
+		6585A56E2E2FD08F000BD35A /* NetworkLibrary */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = NetworkLibrary; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6585A4242E2EC375000BD35A /* ExchangeApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ExchangeApp;
-			sourceTree = "<group>";
-		};
-		6585A4352E2EC376000BD35A /* ExchangeAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ExchangeAppTests;
-			sourceTree = "<group>";
-		};
-		6585A43F2E2EC376000BD35A /* ExchangeAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ExchangeAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6585A50D2E2ECFE3000BD35A /* UILibrary in Frameworks */,
+				6585A5702E2FD4EF000BD35A /* NetworkLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,9 +74,10 @@
 		6585A4192E2EC375000BD35A = {
 			isa = PBXGroup;
 			children = (
+				6585A56E2E2FD08F000BD35A /* NetworkLibrary */,
+				6585A4E32E2ECE1C000BD35A /* UILibrary */,
 				6585A4242E2EC375000BD35A /* ExchangeApp */,
-				6585A4352E2EC376000BD35A /* ExchangeAppTests */,
-				6585A43F2E2EC376000BD35A /* ExchangeAppUITests */,
+				6585A4CA2E2ECB2C000BD35A /* Frameworks */,
 				6585A4232E2EC375000BD35A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +90,13 @@
 				6585A43C2E2EC376000BD35A /* ExchangeAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		6585A4CA2E2ECB2C000BD35A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +119,8 @@
 			);
 			name = ExchangeApp;
 			packageProductDependencies = (
+				6585A50C2E2ECFE3000BD35A /* UILibrary */,
+				6585A56F2E2FD4EF000BD35A /* NetworkLibrary */,
 			);
 			productName = ExchangeApp;
 			productReference = 6585A4222E2EC375000BD35A /* ExchangeApp.app */;
@@ -129,9 +138,6 @@
 			);
 			dependencies = (
 				6585A4342E2EC376000BD35A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6585A4352E2EC376000BD35A /* ExchangeAppTests */,
 			);
 			name = ExchangeAppTests;
 			packageProductDependencies = (
@@ -152,9 +158,6 @@
 			);
 			dependencies = (
 				6585A43E2E2EC376000BD35A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				6585A43F2E2EC376000BD35A /* ExchangeAppUITests */,
 			);
 			name = ExchangeAppUITests;
 			packageProductDependencies = (
@@ -402,8 +405,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -431,8 +435,9 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,6 +563,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6585A50C2E2ECFE3000BD35A /* UILibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UILibrary;
+		};
+		6585A56F2E2FD4EF000BD35A /* NetworkLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = NetworkLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6585A41A2E2EC375000BD35A /* Project object */;
 }
